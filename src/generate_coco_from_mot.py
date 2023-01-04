@@ -292,7 +292,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate COCO from MOT.')
     parser.add_argument('--mots20', action='store_true')
     parser.add_argument('--mot20', action='store_true')
+    parser.add_argument('--data-dir', default='.')
     args = parser.parse_args()
+
+    os.chdir(args.data_dir)
 
     mot15_seqs_names = list(MOT_15_SEQS_INFO.keys())
 
