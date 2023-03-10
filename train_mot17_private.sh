@@ -1,7 +1,7 @@
 #!/bin/bash
 
 python src/train.py with \
-    mot17 \
+    mot17_crowdhuman \
     deformable \
     multi_frame \
     tracking \
